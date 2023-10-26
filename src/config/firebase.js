@@ -1,9 +1,9 @@
 const admin = require("firebase-admin");
 
-const serviceAccount = require("./token.json");
+//const serviceAccount = require("GOOGLE_APPLICATION_CREDENTIALS");
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.applicationDefault(),
   databaseURL: "https://curriculo-111e7.firebaseio.com",
 });
 
